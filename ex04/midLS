@@ -1,0 +1,2 @@
+ls -lt --ignore='.*' --ignore='.' --ignore='..' --group-directories-first --format=single-column | while read item; do if [ -d "$item" ]; then echo -n "$item/"; else echo -n "$item"; fi; echo -n ", "; done
+
